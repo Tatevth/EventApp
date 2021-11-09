@@ -7,7 +7,6 @@ namespace EventApp
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
-
         /// <summary>
         /// Clean up any resources being used.
         /// </summary>
@@ -20,9 +19,7 @@ namespace EventApp
             }
             base.Dispose(disposing);
         }
-
         #region Windows Form Designer generated code
-
         /// <summary>
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
@@ -75,9 +72,9 @@ namespace EventApp
             this.lastnameLbl.AutoSize = true;
             this.lastnameLbl.Location = new System.Drawing.Point(48, 117);
             this.lastnameLbl.Name = "lastnameLbl";
-            this.lastnameLbl.Size = new System.Drawing.Size(70, 17);
+            this.lastnameLbl.Size = new System.Drawing.Size(76, 17);
             this.lastnameLbl.TabIndex = 3;
-            this.lastnameLbl.Text = "Lastname";
+            this.lastnameLbl.Text = "Last Name";
             // 
             // lastnameBox
             // 
@@ -107,11 +104,11 @@ namespace EventApp
             // studentGridView
             // 
             this.studentGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.studentGridView.Location = new System.Drawing.Point(5, 228);
+            this.studentGridView.Location = new System.Drawing.Point(12, 232);
             this.studentGridView.Name = "studentGridView";
             this.studentGridView.RowHeadersWidth = 51;
             this.studentGridView.RowTemplate.Height = 24;
-            this.studentGridView.Size = new System.Drawing.Size(346, 218);
+            this.studentGridView.Size = new System.Drawing.Size(488, 289);
             this.studentGridView.TabIndex = 7;
             this.studentGridView.SelectionChanged += new System.EventHandler(this.StudentGridView_SelectionChanged);
             // 
@@ -136,11 +133,11 @@ namespace EventApp
             this.deleteBtn.UseVisualStyleBackColor = true;
             this.deleteBtn.Click += new System.EventHandler(this.DeleteBtn_Click);
             // 
-            // Form1
+            // EventApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(354, 448);
+            this.ClientSize = new System.Drawing.Size(1093, 533);
             this.Controls.Add(this.deleteBtn);
             this.Controls.Add(this.updateBtn);
             this.Controls.Add(this.studentGridView);
@@ -151,16 +148,14 @@ namespace EventApp
             this.Controls.Add(this.namebox);
             this.Controls.Add(this.namelbl);
             this.Controls.Add(this.saveBtn);
-            this.Name = "Form1";
+            this.Name = "EventApp";
             this.Text = "EventApp";
             ((System.ComponentModel.ISupportInitialize)(this.studentGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
-
         #endregion
-
         private System.Windows.Forms.Button saveBtn;
         private System.Windows.Forms.Label namelbl;
         private System.Windows.Forms.TextBox namebox;

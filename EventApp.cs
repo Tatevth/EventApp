@@ -19,7 +19,6 @@ namespace EventApp
             this._studentService = new StudentService();
             InitializeComponent();
         }
-
         private void SaveBtn_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(namebox.Text) || string.IsNullOrEmpty(lastnameBox.Text))
@@ -52,7 +51,6 @@ namespace EventApp
                 nameValidLbl.Text = string.Empty;
             }
         }
-
         private void lastname_TextChanged(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(lastnameBox.Text))
@@ -70,7 +68,6 @@ namespace EventApp
             namebox.Text = studentGridView.CurrentRow.Cells[1].Value.ToString();
             lastnameBox.Text = studentGridView.CurrentRow.Cells[2].Value.ToString();
         }
-       
         private void UpdateBtn_Click(object sender, EventArgs e)
         {
             if (namebox.Text!="" && lastnameBox.Text!="")
@@ -84,7 +81,6 @@ namespace EventApp
                 MessageBox.Show("Has not updated");
             }
         }
-
         private void DeleteBtn_Click(object sender, EventArgs e)
         {
             if (namebox.Text != "" && lastnameBox.Text != "")
@@ -107,9 +103,10 @@ namespace EventApp
             Id =Guid.NewGuid();
         }
         public Guid Id { get; set; }
+        [DisplayName("First Name")]
         public string Name { get; set; }
+        [DisplayName("Last Name")]
         public string LastName { get; set; }
-       
     }
     public class StudentService
     {
