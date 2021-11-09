@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace EventApp
 {
-    public partial class Form1 : Form
+    public partial class EventApp : Form
     {
         private const string requiredMessage = "Required";
         private readonly  StudentService _studentService;
-        public Form1()
+        public EventApp()
         {
             this._studentService = new StudentService();
             InitializeComponent();
@@ -83,8 +83,6 @@ namespace EventApp
             {
                 MessageBox.Show("Has not updated");
             }
-            
-
         }
 
         private void DeleteBtn_Click(object sender, EventArgs e)
@@ -123,7 +121,6 @@ namespace EventApp
         public List<Student> GetAll()
         {
             return _students;
-        }
-       
+        }    
     }
 }

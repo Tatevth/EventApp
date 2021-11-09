@@ -1,7 +1,7 @@
 ﻿
 namespace EventApp
 {
-    partial class Form1
+    partial class EventApp
     {
         /// <summary>
         /// Required designer variable.
@@ -152,7 +152,7 @@ namespace EventApp
             this.Controls.Add(this.namelbl);
             this.Controls.Add(this.saveBtn);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "EventApp";
             ((System.ComponentModel.ISupportInitialize)(this.studentGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
